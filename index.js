@@ -1,60 +1,77 @@
 'use strict';
 
 //1st task
-
-// const user = {
-//     name: prompt('Введите ваше имя:'),
-//     age: prompt('Введите ваш возраст:'),
-//     gender: confirm("Вы мужчина? Нажмите 'OK' если да, 'Отмена'если нет") ? "мужчина" : "женщина"
-// }
-//   console.log(Имя: ${user.name});
-//   console.log(Возраст: ${user.age});
-//   console.log(Пол: ${user.gender});
+// const age = +prompt("Сколько вам лет?");
+// let checkAge = (age >= 18) ? true : 'Родители разрешили?' + ` ${age} `;
+// console.log(checkAge);
 
 // //2nd task
-// let digit = prompt('Введите любое число:') 
+// let pow = (a, b) => {return a ** b;}
+// console.log(pow(2, 10));
 
-// if(digit != null){
-//     alert(digit);
-// }else {
-//     alert('ошибка')
-// }
-
-// //3rd task 
-// let a = +prompt('a?', '');
-// console.log(a) // string
-// a = +a
-// console.log(a) // number
-
-// switch(a){
-//     case 0:
-//         alert(0);
-//         break;
-//     case 1:
-//         alert(1);
-//         break;
-//     case 2:
-//         alert('2,3');
-//         break;
-//     case 3:
-//         alert('2,3');
-//         break;
-// }
+// //3rd task
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+  
+//   ask(
+//     "Вы согласны?", 
+//     (yes) => { alert("Вы согласились."); }, 
+//     (no) => { alert("Вы отменили выполнение."); }
+// );
 
 // //4th task
-// let sum = 0;
-// for(let i=0; i<=100; i++){
-//     if(i%2 === 0)
-//     {
-//         sum+=i;
-//     }
-// }
-// console.log(sum);
+// let arr = [5, 2, 1, -10, 8];
+// arr.sort((a,b) => b-a);
+// alert(arr); // 8, 5, 2, 1, -10
 
 // //5th task
-// let i = 0;
-// while(i < 3)
-// {
-//     alert( number ${i}! );
-//     ++i;
-// }
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let users = [ vasya, petya, masha ];
+
+// let names = ['Вася', 'Петя', 'Маша'];
+
+// let ages = [25, 30, 28];
+// alert( ages ); 
+
+
+/////////////////////
+// 6th task
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+// let users = [ vasya, petya, masha ];
+
+// let usersMapped = users.map(user => 
+//     (
+//         {
+//             fullName: ${user.name} ${user.surname}, id: user.id
+//         }
+//     )
+// );
+
+// alert( usersMapped[0].id ) // 1
+// alert( usersMapped[0].fullName ) // Вася Пупкин
+///////////////////////////
+
+//7th task
+// let vasya = { name: "Вася", age: 30 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 30 };
+
+// let arr = [ vasya, petya, masha ];
+
+// function getAverageAge(arr) {
+//     let sumAge = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//       sumAge += arr[i].age;
+//     }
+//     return sumAge / arr.length;
+//   }
+  
+// alert( getAverageAge(arr) );
