@@ -2,74 +2,59 @@
 
 //1st task
 
-const nameCafe = 'Daniyalcafe';
-let placeCafe = 'Astana';
-let countCafe = 3;
-let isCafeHalal = true;
-let address;
+// const user = {
+//     name: prompt('Введите ваше имя:'),
+//     age: prompt('Введите ваш возраст:'),
+//     gender: confirm("Вы мужчина? Нажмите 'OK' если да, 'Отмена'если нет") ? "мужчина" : "женщина"
+// }
+//   console.log(Имя: ${user.name});
+//   console.log(Возраст: ${user.age});
+//   console.log(Пол: ${user.gender});
 
-console.log (nameCafe);
-console.log (placeCafe);
-console.log (countCafe);
-console.log (isCafeHalal);
-console.log (address);
+// //2nd task
+// let digit = prompt('Введите любое число:') 
 
+// if(digit != null){
+//     alert(digit);
+// }else {
+//     alert('ошибка')
+// }
 
-let Menu1 = {
-    soup: 'pumpkin',
-    meal: 'kebab',
-    salad: 'cesar',
-    drink: 'cola',
+// //3rd task 
+// let a = +prompt('a?', '');
+// console.log(a) // string
+// a = +a
+// console.log(a) // number
 
-    alchocol: {
-        alc1: 'vodka',
-        alc2: 'beer'
-    }
-}
+// switch(a){
+//     case 0:
+//         alert(0);
+//         break;
+//     case 1:
+//         alert(1);
+//         break;
+//     case 2:
+//         alert('2,3');
+//         break;
+//     case 3:
+//         alert('2,3');
+//         break;
+// }
 
-let Menu2 = {
-    soup: 'cream-soup',
-    meal: 'steak',
-    salad: 'greece',
-    drink: 'water',
+// //4th task
+// let sum = 0;
+// for(let i=0; i<=100; i++){
+//     if(i%2 === 0)
+//     {
+//         sum+=i;
+//     }
+// }
+// console.log(sum);
 
-    alchocol: {
-        alc1: 'whisky',
-        alc2: 'wine'
-    }
-}
-
-Menu1.IsCafeNear = true;
-Menu2.IsCafeNear = false;
-
-delete Menu1.alchocol;
-delete Menu2.salad;
-
-console.log (Menu1);
-console.log (Menu2);
-
-//2nd task
-
-let vehicle = {
-    brandName: 'BMW',
-    model: 'X5',
-}
-
-vehicle.brandName = 'M1';
-delete vehicle.model;
-
-console.log (vehicle);
-
-//LAST task
-
-let salaries = {
-    Daniyal: 500,
-    Samat: 500,
-    Akezhan: 500
-}
-
-let sumTotal = 0;
-for(let key in salaries) {
-    sumTotal += salaries[key]
-}
-console.log(sumTotal);
+// //5th task
+// let i = 0;
+// while(i < 3)
+// {
+//     alert( number ${i}! );
+//     ++i;
+// }
