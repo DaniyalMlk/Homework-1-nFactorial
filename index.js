@@ -1,77 +1,41 @@
 'use strict';
 
-//1st task
-// const age = +prompt("Сколько вам лет?");
-// let checkAge = (age >= 18) ? true : 'Родители разрешили?' + ` ${age} `;
-// console.log(checkAge);
+//<script src="./index.js"></script>
+//git branch nameOfYourBranch
+//git checkout nameOfYourBranch
+//git branch
+//git add .
+//git commit -m "message"
+//git push
 
-// //2nd task
-// let pow = (a, b) => {return a ** b;}
-// console.log(pow(2, 10));
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// //3rd task
-// function ask(question, yes, no) {
-//     if (confirm(question)) yes()
-//     else no();
-//   }
-  
-//   ask(
-//     "Вы согласны?", 
-//     (yes) => { alert("Вы согласились."); }, 
-//     (no) => { alert("Вы отменили выполнение."); }
-// );
+const ageTable = document.getElementById('age-table');
+console.log(ageTable); 
 
-// //4th task
-// let arr = [5, 2, 1, -10, 8];
-// arr.sort((a,b) => b-a);
-// alert(arr); // 8, 5, 2, 1, -10
+const label = ageTable.getElementsByTagName('label');
+console.log(label);
 
-// //5th task
-// let vasya = { name: "Вася", age: 25 };
-// let petya = { name: "Петя", age: 30 };
-// let masha = { name: "Маша", age: 28 };
+const td = ageTable.getElementsByTagName('td')[0];
+console.log(td);
 
-// let users = [ vasya, petya, masha ];
+const search = document.querySelector('form[name="search"]');
+console.log(search);
 
-// let names = ['Вася', 'Петя', 'Маша'];
+const firstInput = search.querySelector('input');
+console.log(firstInput);
 
-// let ages = [25, 30, 28];
-// alert( ages ); 
+const lastInput = search.querySelector('input:last-child');
+console.log(lastInput);
 
 
-/////////////////////
-// 6th task
-// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
-// let petya = { name: "Петя", surname: "Иванов", id: 2 };
-// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+//Task 2
+{/* <script>
+  let body = document.body;
 
-// let users = [ vasya, petya, masha ];
+  body.innerHTML = "<!--" + body.tagName + "-->";
 
-// let usersMapped = users.map(user => 
-//     (
-//         {
-//             fullName: ${user.name} ${user.surname}, id: user.id
-//         }
-//     )
-// );
+  alert( body.firstChild.data ); // что выведет?
+</script> */}
 
-// alert( usersMapped[0].id ) // 1
-// alert( usersMapped[0].fullName ) // Вася Пупкин
-///////////////////////////
-
-//7th task
-// let vasya = { name: "Вася", age: 30 };
-// let petya = { name: "Петя", age: 30 };
-// let masha = { name: "Маша", age: 30 };
-
-// let arr = [ vasya, petya, masha ];
-
-// function getAverageAge(arr) {
-//     let sumAge = 0;
-//     for (let i = 0; i < arr.length; i++) {
-//       sumAge += arr[i].age;
-//     }
-//     return sumAge / arr.length;
-//   }
-  
-// alert( getAverageAge(arr) );
+//ВЫВЕЛ aler() с надписью BODY;
