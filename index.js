@@ -8,97 +8,30 @@
 //git commit -m "message"
 //git push
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// / DOM element onclick
-// const btn = document.querySelector('.btn'),
-//       btn1 = document.querySelectorAll('.btn')[1],
-//       btn2 = document.querySelectorAll('.btn')[2],
-//       body = document.querySelector('body'),
-//       btns = document.querySelectorAll('.btn');
-
-
-// // btn.onclick = function(){
-// //     alert('Hello!')
-// // }
-
-// // btn.onclick = function(){
-// //     alert('Hello again!');
-// // }
-
-
-// const alertShow = function(event){
-//    console.log('My first click ')
-//    event.target.remove();
-//    btn.removeEventListener('click', alertShow)
-// }
-
-// btn.addEventListener('click', alertShow)
-
-// // btn.addEventListener('click', (event)=>{
-// //     event.target.remove();
-// // });
-
-// let i = 0
-
-// const count = function(){
-//     console.log(i, 'i increacing')
-//     i++;
-//     if(i===3){
-//         btn1.removeEventListener('click', count);
-//     }
-// }
-
-// btn1.addEventListener('click', count);
-
-// btn2.addEventListener('mouseover', function(e){
-//     console.log(e)
-//     btn2.style.backgroundColor = 'black';
-// })
-
-// btn2.addEventListener('mouseout', function(e){
-//     console.log(e)
-//     btn2.style.backgroundColor = 'blue';
-// })
-
-// let s = ''
-// body.addEventListener('keydown',(e)=>{
-//     s+= e.key;
-//     if(s === 'dalida'){
-//         alert('you texted to Dalida');
-//     }
-// })
-
-// btns.forEach(item=>{
-//     item.addEventListener('click', ()=>{
-//         console.log('count')
-//     })
-// });
-
-
-////////////////////////////
 
 //1st Task
-// document.getElementById('hider').onclick = function() {
-//     let text = document.getElementById('text');
-//     text.style.visibility = 'hidden';  
-// };
+// function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+//   }
+  
+//   delay(3000).then(() => alert('выполнилось через 3 секунды'));
 
 //2nd Task
+// let promise = new Promise(function(resolve, reject) {
+//     resolve(1);
+  
+//     setTimeout(() => resolve(2), 1000);
+//   });
+  
+//   promise.then(alert);
 
-// const button = document.querySelector('button');
-
-// button.addEventListener("click", () => alert("1"));
-// button.removeEventListener("click", () => alert("1"));
-// button.onclick = () => alert(2);
-//Ответ 1 и 2
+// Код вывел '1'
 
 //3rd Task
+// promise.then(f1).catch(f2);
 
-// let panes = document.querySelectorAll('.pane');
+// promise.then(f1, f2);
 
-//     for(let pane of panes) {
-//       pane.insertAdjacentHTML("afterbegin", '<button class="remove-button">[x]</button>');
-//       pane.firstChild.onclick = () => pane.remove();
-//     }
-//Cори, код юзанул с песочницы, других вариантов в голову не пришло, решение понял прочитал как юзается insert
+//В двух примерах есть разница, к примеру в 1 промисе используется catch чтобы словить ошибку. В то время как во 2 промисе ошибка не задектетиться.
